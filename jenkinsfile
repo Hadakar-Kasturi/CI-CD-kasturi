@@ -21,7 +21,7 @@ pipeline {
        steps {
         sshagent(['jenkins_global']) {
 
-      sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/assignement/webapp/target/webapp.war ubuntu@13.229.230.56:/home/ubuntu/apache-tomcat-9.0.98/webapps'
+      sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/assignement/webapp/target/webapp.war ubuntu@3.0.183.233:/home/ubuntu/apache-tomcat-9.0.98/webapps'
      }
       }
     }
